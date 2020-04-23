@@ -7,9 +7,13 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - port: {{ .Values.serviceWebPort.port }}
+      targetPort: {{ .Values.serviceWebPort.port }}
       protocol: TCP
-      name: http
+      name: {{ .Values.serviceWebPort.name }}
+    - port: {{ .Values.serviceConnectPort.port }}
+      targetPort: {{ .Values.serviceConnectPort.port }}
+      protocol: TCP
+      name: {{ .Values.serviceConnectPort.name }}
   selector:
     {{- include "rabbitmq.selectorLabels" . | nindent 4 }}

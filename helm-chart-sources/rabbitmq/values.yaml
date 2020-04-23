@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: index.docker.io/rabbitmq:3-management
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -33,8 +33,13 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+serviceConnectPort:
+  port: 5672
+  name: connect-port
+serviceWebPort:
+  port: 15672
+  name: web-port
 
 ingress:
   enabled: false
