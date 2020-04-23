@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  rabbitmq:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-04-23T11:38:03.5236228+01:00"
+    description: A Helm chart for RabbitMQ
+    digest: 92b5436a996c10a12217b0d49ceb46493c82d85282040641b04f3a6313667f3c
+    name: rabbitmq
+    type: application
+    urls:
+    - https://tammack.github.io/rabbitmq-0.1.0.tgz
+    version: 0.1.0
   super-banana:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-04-23T10:40:01.2313229+01:00"
+    created: "2020-04-23T11:38:03.5256231+01:00"
     description: A Helm chart for Kubernetes
     digest: c91427c39847b192e7b2c9b845ade3d10f8daae72d36a6a1e6ed1d17840c1b5f
     name: super-banana
@@ -11,4 +22,4 @@ entries:
     urls:
     - https://tammack.github.io/super-banana-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-23T10:40:01.2243244+01:00"
+generated: "2020-04-23T11:38:03.521623+01:00"
