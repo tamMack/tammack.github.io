@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  super-banana:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-04-23T10:40:01.2313229+01:00"
+    description: A Helm chart for Kubernetes
+    digest: c91427c39847b192e7b2c9b845ade3d10f8daae72d36a6a1e6ed1d17840c1b5f
+    name: super-banana
+    type: application
+    urls:
+    - https://tammack.github.io/super-banana-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-04-23T10:40:01.2243244+01:00"
